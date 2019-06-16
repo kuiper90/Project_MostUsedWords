@@ -1,0 +1,17 @@
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\UnitTest_MostUsedWords.deps.json
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\UnitTest_MostUsedWords.runtimeconfig.json
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\UnitTest_MostUsedWords.runtimeconfig.dev.json
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\UnitTest_MostUsedWords.dll
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\UnitTest_MostUsedWords.pdb
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\Project_MostUsedWords.dll
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\bin\Debug\netcoreapp2.1\Project_MostUsedWords.pdb
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\obj\Debug\netcoreapp2.1\UnitTest_MostUsedWords.csprojAssemblyReference.cache
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\obj\Debug\netcoreapp2.1\UnitTest_MostUsedWords.csproj.CoreCompileInputs.cache
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\obj\Debug\netcoreapp2.1\UnitTest_MostUsedWords.AssemblyInfoInputs.cache
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\obj\Debug\netcoreapp2.1\UnitTest_MostUsedWords.AssemblyInfo.cs
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\obj\Debug\netcoreapp2.1\UnitTest_MostUsedWords.csproj.CopyComplete
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\obj\Debug\netcoreapp2.1\UnitTest_MostUsedWords.dll
+D:\Git\Project_MostUsedWords\UnitTest_MostUsedWords\obj\Debug\netcoreapp2.1\UnitTest_MostUsedWords.pdb
