@@ -22,16 +22,17 @@ namespace UnitTest_MostUsedWords
             string text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum lobortis porta. Vivamus convallis non augue at feugiat. Fusce ultricies mi vel faucibus blandit. Aliquam ultricies ornare elementum. Duis vel lectus risus. Quisque sed lacinia ligula. Sed eu orci dui. Sed elementum imperdiet auctor. Duis eget quam eleifend, pharetra elit hendrerit, mattis arcu. Nunc dolor metus, viverra vel orci facilisis, cursus accumsan turpis. Vestibulum sit amet mauris dapibus, ullamcorper quam sed, pretium quam. Donec imperdiet lobortis nisi, in rutrum lacus accumsan quis.";
             Dictionary<string, int> dict = GetTopOccurrences(text, 7);
             var key = dict.FirstOrDefault(d => d.Value == 3).Key;
-            Assert.True(key == "vel");
+            Assert.True(key == "quam");
         }
 
         [Fact]
         public void GetTopOccurrences_ShouldReturn_Last_KeyValuePair()
         {
             string text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum lobortis porta. Vivamus convallis non augue at feugiat. Fusce ultricies mi vel faucibus blandit. Aliquam ultricies ornare elementum. Duis vel lectus risus. Quisque sed lacinia ligula. Sed eu orci dui. Sed elementum imperdiet auctor. Duis eget quam eleifend, pharetra elit hendrerit, mattis arcu. Nunc dolor metus, viverra vel orci facilisis, cursus accumsan turpis. Vestibulum sit amet mauris dapibus, ullamcorper quam sed, pretium quam. Donec imperdiet lobortis nisi, in rutrum lacus accumsan quis.";
-            Dictionary<string, int> dict = GetTopOccurrences(text, 7);
+          
+            Dictionary<string, int> dict = GetTopOccurrences(text, 700);
             dict.TryGetValue("elit", out int value);
-            Assert.True(value == 2);
+            Assert.Equal(2, value);
         }
     }
 }

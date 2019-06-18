@@ -1,30 +1,28 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Project_MostUsedWords
 {
     public class MostUsedWords
     {
+        struct Word
+        {
+            public string Text { get; set; }
+            public int Count { get; set; }
+        }
+
         public static Dictionary<string, int>  GetTopOccurrences(string text, int top)
         {
-            char[] charToTrim = {',', ';', '(', ')', '.'};
-
             return text
-                .Split(' ')
-                .Aggregate(new Dictionary<string, int>(), (wordCount, word) => {
-                    string lowerWord = word
-                                        .ToLowerInvariant()
-                                        .Trim(charToTrim);
-                    if (!wordCount.ContainsKey(lowerWord))
-                        wordCount.Add(lowerWord, 1);
-                    else
-                        wordCount[lowerWord]++;
-                    return wordCount;
-                })
-                .Select(w => w)
-                .OrderByDescending(k => k.Value)
+                .Split(" ,.;()".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
+                .Select(w => w.ToLowerInvariant())
+                .GroupBy(w => w)
+                .Select(g => new Word { Text = g.Key, Count = g.Count() })
+                .OrderByDescending(w => w.Count)
+                .ThenBy(w => w.Text)
                 .Take(top)
-                .ToDictionary(kw => kw.Key, kw => kw.Value);
+                .ToDictionary(w => w.Text, w => w.Count);
         }
     }
 }
